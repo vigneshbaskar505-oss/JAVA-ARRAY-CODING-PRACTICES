@@ -147,4 +147,29 @@ public class ForEachDemo {
 
 }
 
+NEXT--------------------------------------------------------------------
+package arrays;
+
+public class JaggedArray {
+
+	public static void main(String[] args) {
+
+
+//		Jagged array => for 2D arr with varying column count
+//		No of cols in each row will not be same
+		
+		int a[][]= {{1,2,3},{1,2}};
+		
+		System.out.println("Jagged Array for given array:");
+		
+		for(int i=0;i<a.length;i++) {
+			for(int j=0;j<a[i].length;j++) {
+				System.out.print(a[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+	}
+
+}
 

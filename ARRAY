@@ -88,3 +88,63 @@ public class Arrays {
 
 }
 
+NEXT-------------------------------------------------------------------
+
+package arrays;
+
+public class Demo2 {
+
+	public static void main(String[] args) {
+ 
+		
+//	                   0      1        2	
+		int a[][]= {{1,2,3},{4,5,6},{7,8,9}};
+		
+		for (int t[]:a) {  //0,1,2
+			//outer loop - row
+			for(int val: t) { //0 -> {1,2,3} -> val
+				System.out.print(val+" ");
+			}
+			System.out.println();
+			
+		}
+		
+		
+	}
+
+}
+NEXT-----------------------------------------------------------------------------------------------
+package arrays;
+
+public class ForEachDemo {
+
+	public static void main(String[] args) {
+		
+//		for 1dim
+		System.out.println("For each for 1D array");
+
+		int arr[]= {1,2,3,4,5};
+		for(int num:arr) {
+			System.out.print(num+" ");
+		}
+		System.out.println();
+ 
+		System.out.println("For each for 2D array");
+		int a[][]= {{1,2,3},{4,5,6},{7,8,9}};
+//		by foreach loop print 2d array
+		
+		for(int temp[]:a) {
+			for(int value: temp) {
+				System.out.print(value+" ");
+				
+			}
+			System.out.println();
+		}
+		 
+		
+		
+	}
+
+}
+
+
